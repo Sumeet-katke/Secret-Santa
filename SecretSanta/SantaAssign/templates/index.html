@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa</title>
+    <link rel="stylesheet" href="{% static "santa.css" %}">
+    <link rel="icon" type="image/x-icon" href="{% static "E:\Documents\Projects\Secret Santa\SecretSanta\SantaAssign\static\android-chrome-512x512.png" %}">
+    
+    <script src="{% static 'santa.js' %}"></script>
+    <style>
+        @font-face {
+            font-family: 'ChristmasFont';
+            src: url('{% static "E:\Documents\Projects\Secret Santa\SecretSanta\SantaAssign\static\Font\MerryChristmasFlake.ttf" %}');
+        }
+        @font-face {
+            font-family: 'ChristmasFont2';
+            src: url('{% static "E:\Documents\Projects\Secret Santa\SecretSanta\SantaAssign\static\Font\Christmas Balloon Personal Use.otf" %}');
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="santa-bg"></div>
+        <div class="content">
+            <h1 class="christmas-font">Secret Santa</h1>
+            <div class="form-box">
+                <form id="santaForm" action="" method="post">
+                    {% csrf_token %}
+                    <label for="Name">Goblet of Fire:</label>
+                    <input type="text" id="Name" name="Name" required>
+
+                    <button id="submitBtn" type="submit">Join Secret Santa</button>
+                    <div id="surpriseBox" style="display: none;">
+                      <p>Your Secret Child is: <span id="secretChildName"></span></p>
+                      <button id="revealButton" type="button">Reveal</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

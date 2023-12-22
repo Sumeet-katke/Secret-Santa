@@ -1,0 +1,149 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.santa-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("E:\Documents\Projects\Secret Santa\SecretSanta\SantaAssign\static\background.jpg"); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.content {
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+
+/* Christmas-themed font */
+.christmas-font {
+  font-family: 'ChristmasFont', cursive;
+  font-size: 4em;
+  color: #FF0000; /* Red color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Adjust form and button styles as needed */
+/* Adjust form and button styles for a Christmas theme */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.santa-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Add your background image here */
+  background-image: url('../static/background.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.content {
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+
+/* Christmas-themed font */
+.christmas-font {
+  font-family: 'ChristmasFont', cursive;
+  font-size: 5em;
+  color: #FF0000; /* Red color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Adjust form and button styles as needed */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-family: 'ChristmasFont2', cursive;
+  color: #fff;
+  font-size: 3.2em;
+  margin-bottom: 8px;
+}
+
+/* Add this code to ensure visibility */
+#surpriseBox {
+  display: block; /* Ensure it's visible */
+}
+
+#revealButton {
+  display: block; /* Ensure it's visible */
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1em;
+}
+
+button {
+  font-family: 'ChristmasFont2';
+  padding: 12px 24px;
+  margin-top: 20px;
+  background-color: #ffcc00; /* Gold color */
+  color: #0F3057; /* Dark blue */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #ffd700; /* Lighter gold color on hover */
+}
+
+/* Sparkle animation */
+@keyframes sparkle {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.sparkle {
+  animation: sparkle 0.5s ease-in-out;
+}
